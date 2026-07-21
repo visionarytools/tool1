@@ -3929,12 +3929,12 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 
 		1) Server Scripts, ServerScriptService, and ServerStorage are impossible to save due to FilteringEnabled.
 
-		2) If your player cannot spawn into the game, please move the scripts in StarterPlayerScripts somewhere else. Then run "game:GetService("Players").CharacterAutoLoads = true" in the console.
+		2) If your player cannot spawn into the game, please move the scripts in StarterPlayerScripts somewhere else. Then run "game:GetService("Players").CharacterAutoLoads = true" in the Command Bar.
 
 		3) If the chat system does not work, please use the explorer and delete everything inside of the TextChatService/Chat service(s). 
-		OR you can run "game:GetService("Chat"):ClearAllChildren() game:GetService("TextChatService"):ClearAllChildren()" in the console.
+		OR you can run "game:GetService("Chat"):ClearAllChildren() game:GetService("TextChatService"):ClearAllChildren()" in the Command Bar.
 
-		4) If Union and MeshPart collisions do not work, please run the script below in the console:
+		4) If Union and MeshPart collisions do not work, please run the script below in the Command Bar:
 
 		local CoreGui = game:GetService("CoreGui")
 		local Default = Enum.CollisionFidelity.Default
@@ -3947,7 +3947,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 
 		print("Done!")
 
-		5) If you cannot move your camera, please run this script "game.Workspace.CurrentCamera.CameraType = Enum.CameraType.Fixed" in the console.
+		5) If you cannot move your camera, please run this script "game.Workspace.CurrentCamera.CameraType = Enum.CameraType.Fixed" in the Command Bar.
 		OR delete the camera.
 ]]
 					.. "]]"
