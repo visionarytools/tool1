@@ -3925,6 +3925,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 		In addition, it would mean a lot to me if you could join my Discord Server: [VS] Visionary Studios (https://discord.gg/D3GusB9qWK) (Not required, but greatly appreciated! :D)
 	
 		Please keep in mind of the following:
+
 		1) Server Scripts, ServerScriptService, and ServerStorage are impossible to save due to FilteringEnabled.
 
 		2) If your player cannot spawn into the game, please move the scripts in StarterPlayerScripts somewhere else. Then run "game:GetService("Players").CharacterAutoLoads = true" in the console.
