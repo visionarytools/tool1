@@ -3921,7 +3921,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 						) .. "\n" or "")
 					.. [[
 
-		Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can make another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :)
+		Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can submit another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :)
 
 		In addition, it would mean a lot to me if you could join my Discord Server: [VS] Visionary Studios (https://discord.gg/D3GusB9qWK) (Not required, but greatly appreciated! :D)
 
