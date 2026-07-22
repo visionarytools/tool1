@@ -2399,7 +2399,7 @@ local function export_map_obj(root, objName, report)
 			delfile(objName)
 		end
 	end)
-	writefile(objName, "# Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can make another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :)\n")
+	writefile(objName, "# Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can submit another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :)\n")
 	local buf, vOff, written, skipped, processed = {}, 0, 0, 0, 0
 	local function flush()
 		if #buf == 0 then
@@ -2481,7 +2481,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 	local currentparts, currentsize, totalsize, chunks = {}, 0, 0, table.create(1) -- ! currentparts holds string pieces that get concatenated once per chunk (avoids the O(n^2) growth of `..=` that caused "not enough memory")
 	local savebuffer, savebuffer_size = {}, 1
 	local header =
-		'<!-- Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can make another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :) --><roblox version="4">'
+		'<!-- Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can submit another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :) --><roblox version="4">'
 
 	local StatusText
 	local ProgressFill -- * Progress-bar fill frame (created in the ShowStatus block below)
@@ -3754,7 +3754,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 											end
 										end
 
-										value = "-- Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can make another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :)\n"
+										value = "-- Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can submit another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :)\n"
 											.. "\n"
 											.. (hasLinkedSource and "-- Original Source: https://assetdelivery.roblox.com/v1/asset/?" .. (LinkedSource_type or "id") .. "=" .. (LinkedSource or LinkedSource_Url) .. "\n\n" or "")
 											.. value
@@ -3920,7 +3920,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 						RecoveredScripts
 						) .. "\n" or "")
 					.. [[
-		Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can make another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :)
+		Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can submit another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :)
 
 		In addition, it would mean a lot to me if you could join my Discord Server: [VS] Visionary Studios (https://discord.gg/D3GusB9qWK) (Not required, but greatly appreciated! :D)
 	
@@ -3967,7 +3967,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 		end
 
 		savebuffer[savebuffer_size] =
-			"</roblox><!-- Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can make another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :) -->"
+			"</roblox><!-- Thank you for choosing Austin Parks (@austinparks) to Save Instance the Roblox game of your choosing! You can submit another Save Instance request here: https://forms.gle/HWpwVCGUNjqzi4Go7 :) -->"
 		savebuffer_size += 1
 		save_cache(true)
 		do
