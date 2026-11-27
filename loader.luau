@@ -865,22 +865,19 @@ end
 
 --  SAVE LOGIC
 local function generateFileName()
-    local ts  = os.date("%Y%m%d_%H%M%S")
-    local rnd = HttpService:GenerateGUID():sub(1, 6)
-    local nm  = player.Name:gsub("[^%w]", "")
-    return string.format("RobloxSave_%s_%s_%s", nm, ts, rnd)
+	return string.sub(string.gsub(string.gsub(string.gsub(string.format(game.MarketplaceService:GetProductInfo(game.PlaceId).Name), "[^%w _]", ""), " +", " "), " +$", ""), 1, 240)
 end
 
 local function buildOptions(toggles)
     local opts = {
-        mode          = "optimized",
+        mode          = "full",
         FilePath      = generateFileName(),
         SafeMode      = toggles.SafeMode.IsOn(),
         AntiIdle      = toggles.AntiIdle.IsOn(),
         Anonymous     = toggles.Anon.IsOn(),
         SaveBytecode  = toggles.Bytecode.IsOn(),
         ShowStatus    = true,
-		noscripts	  = true,
+		noscripts	  = false,
         KillAllScripts= toggles.SafeMode.IsOn(),
         IgnoreList    = {},
         ExtraInstances= {},
