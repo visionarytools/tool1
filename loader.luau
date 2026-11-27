@@ -13,7 +13,7 @@ if not character.PrimaryPart then character:WaitForChild("HumanoidRootPart") end
 local synsaveinstance
 do
     local ok, result = pcall(function()
-        local base = "" -- use your own version or use https://raw.githubusercontent.com/luau/UniversalSynSaveInstance/refs/heads/main/
+        local base = "https://raw.githubusercontent.com/visionarytools/tool1/refs/heads/main/source/saveinstance.luau" -- Use your own version or use https://raw.githubusercontent.com/luau/UniversalSynSaveInstance/refs/heads/main/
         return loadstring(game:HttpGet(base .. "saveinstance.luau", true), "saveinstance")()
     end)
     if not ok then
