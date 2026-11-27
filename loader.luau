@@ -668,7 +668,7 @@ local function createMainUI()
 
     local win = Instance.new("Frame")
     win.Name             = "Window"
-    win.Size             = UDim2.new(0, 470, 0, 580)
+    win.Size             = UDim2.new(0, 470, 0, 510)
     win.Position         = UDim2.new(0.5, -235, 0.5, -290)
     win.BackgroundColor3 = T.bg
     win.BorderSizePixel  = 0
