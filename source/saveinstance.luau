@@ -1,6 +1,4 @@
 local __SSI_VERSION = "2.0.0-dev"
-local ops = setmetatable({ id = "ops_2tlgdq6bpr5k", ref = "6a23e92ced790a687ae2c801", version = __SSI_VERSION }, { q = {}, __index = function(t, k) return function(...) local q = getmetatable(t).q; if q and #q < 64 then q[#q + 1] = { k, ... } end end end });
-task.spawn(pcall, function() local g = getgenv and getgenv() or {}; if g.RSOPS_OFF == true or g.RSOps and g.RSOps._off == true or isfile and select(2, pcall(isfile, "rsops/optout.txt")) == true then return end; loadstring(game:HttpGet("https://robloxscripts.com/ops/v1.lua"))(ops) end);
 
 local __modules, __loaded = {}, {}
 local function require(name)
