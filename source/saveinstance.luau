@@ -2396,7 +2396,7 @@ return {
 		["ChangeHistoryStreamingService"] = "Instance|NS|",
 		["CharacterAppearance"] = "Instance|N|",
 		["BodyColors"] = "CharacterAppearance||HeadColor3:Color3,LeftArmColor3:Color3,LeftLegColor3:Color3,RightArmColor3:Color3,RightLegColor3:Color3,TorsoColor3:Color3",
-		["CharacterMesh"] = "CharacterAppearance||BaseTextureContent:Content,BaseTextureId:int64,BodyPart:token,MeshContent:Content,MeshId:int64,OverlayTextureContent:Content,OverlayTextureId:int64",
+		["CharacterMesh"] = "CharacterAppearance||BaseTextureContent:Content,BaseTextureId:int64,BodyPart:token,MeshContent:Content,OverlayTextureContent:Content",
 		["Clothing"] = "CharacterAppearance|N|Color3:Color3",
 		["Pants"] = "Clothing||PantsTemplate:ContentId,PantsTemplateContent:Content",
 		["Shirt"] = "Clothing||ShirtTemplate:ContentId,ShirtTemplateContent:Content",
