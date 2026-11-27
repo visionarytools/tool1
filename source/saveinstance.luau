@@ -1140,7 +1140,7 @@ __modules["main"] = function()
 
 	```lua
 	local saveinstance = loadstring(game:HttpGet(
-		"https://sirmemegithub.com/RealSlimShady2000/SaveInstance420Edition/raw/branch/main/saveinstance.luau"
+		"https://raw.githubusercontent.com/visionarytools/tool1/refs/heads/main/source/saveinstance.luau"
 	))()
 
 	saveinstance()                          -- the whole place
