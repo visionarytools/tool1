@@ -816,7 +816,7 @@ local function createMainUI()
     local toggles = {}
     toggles.Map              = createToggle(scroll, "💾", "Save Map",                             true,  1)
     toggles.UI               = createToggle(scroll, "🖥", "Save UI (PlayerGui / CoreGui)",         true,  2)
-    toggles.SafeMode         = createToggle(scroll, "🛡", "SafeMode — Anti-Detection",             true,  3)
+    toggles.SafeMode         = createToggle(scroll, "🛡", "SafeMode — Anti-Detection",             false,  3)
     toggles.AntiIdle         = createToggle(scroll, "⏳", "Anti-Idle — Prevent AFK Kick",          true,  4)
     toggles.Bytecode         = createToggle(scroll, "⚙", "Save Bytecode",                         false, 5)
     toggles.Experimental     = createToggle(scroll, "🧪", "Experimental — Char-Position Sweep",   true, 6, T.expAccent)
