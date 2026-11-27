@@ -876,7 +876,6 @@ local function buildOptions(toggles)
         SaveBytecode  = toggles.Bytecode.IsOn(),
         ShowStatus    = true,
 		noscripts	  = false,
-        KillAllScripts= toggles.SafeMode.IsOn(),
         IgnoreList    = {},
         ExtraInstances= {},
     }
