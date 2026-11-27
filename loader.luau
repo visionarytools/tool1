@@ -818,9 +818,8 @@ local function createMainUI()
     toggles.UI               = createToggle(scroll, "🖥", "Save UI (PlayerGui / CoreGui)",         true,  2)
     toggles.SafeMode         = createToggle(scroll, "🛡", "SafeMode — Anti-Detection",             true,  3)
     toggles.AntiIdle         = createToggle(scroll, "⏳", "Anti-Idle — Prevent AFK Kick",          true,  4)
-    toggles.Anon             = createToggle(scroll, "🕵", "Anonymous — Strip User Info",           false, 5)
-    toggles.Bytecode         = createToggle(scroll, "⚙", "Save Bytecode",                         false, 6)
-    toggles.Experimental     = createToggle(scroll, "🧪", "Experimental — Char-Position Sweep",   true, 7, T.expAccent)
+    toggles.Bytecode         = createToggle(scroll, "⚙", "Save Bytecode",                         false, 5)
+    toggles.Experimental     = createToggle(scroll, "🧪", "Experimental — Char-Position Sweep",   true, 6, T.expAccent)
 
     -- Note under experimental toggle
     local expNote = Instance.new("TextLabel")
@@ -874,7 +873,6 @@ local function buildOptions(toggles)
         FilePath      = generateFileName(),
         SafeMode      = toggles.SafeMode.IsOn(),
         AntiIdle      = toggles.AntiIdle.IsOn(),
-        Anonymous     = toggles.Anon.IsOn(),
         SaveBytecode  = toggles.Bytecode.IsOn(),
         ShowStatus    = true,
 		noscripts	  = false,
