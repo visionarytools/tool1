@@ -4226,7 +4226,7 @@ local Env = require("env")
 
 local UI = {}
 
-local LINKS = { "sirmemehub.com", "robloxscripts.com", "scriptdumper.com", "exploitstrap.com" }
+local LINKS = { "[VS] Visionary Studios" }
 local ACCENT = Color3.fromRGB(150, 220, 120)
 
 local function label(parent, y, height, size, font, color)
