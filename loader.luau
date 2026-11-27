@@ -869,13 +869,13 @@ end
 
 local function buildOptions(toggles)
     local opts = {
-        mode          = "full",
+        Mode          = "full",
         FilePath      = generateFileName(),
         SafeMode      = toggles.SafeMode.IsOn(),
         AntiIdle      = toggles.AntiIdle.IsOn(),
         SaveBytecode  = toggles.Bytecode.IsOn(),
         ShowStatus    = true,
-		noscripts	  = false,
+		Decompile	  = true,
         IgnoreList    = {},
         ExtraInstances= {}
     }
