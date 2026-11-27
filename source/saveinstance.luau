@@ -1323,7 +1323,7 @@ return function(version, ops)
 		end
 
 		if options.SafeMode and Players.LocalPlayer then
-			pcall(Players.LocalPlayer.Kick, Players.LocalPlayer, "\nSaveInstance 420: saving this place, please wait...")
+			pcall(Players.LocalPlayer.Kick, Players.LocalPlayer, "\nAustin's Save Instance: Saving this place, please wait...")
 			pcall(function()
 				game:GetService("RunService"):Set3dRenderingEnabled(false)
 			end)
