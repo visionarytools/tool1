@@ -1,4 +1,4 @@
-local __SSI_VERSION = "2.0.0-dev"
+local __SSI_VERSION = "[REVAMPED]"
 
 local __modules, __loaded = {}, {}
 local function require(name)
@@ -4272,7 +4272,7 @@ function UI.open(version)
 		stroke.Parent = panel
 
 		local title = label(panel, 10, 18, 15, Enum.Font.GothamBold, ACCENT)
-		title.Text = "SaveInstance 420 Edition " .. version
+		title.Text = "Austin's Save Instance " .. version
 		local link = label(panel, 10, 18, 12, Enum.Font.Gotham, Color3.fromRGB(120, 125, 135))
 		link.TextXAlignment = Enum.TextXAlignment.Right
 		link.Text = LINKS[1]
