@@ -1270,7 +1270,7 @@ return function(version, ops)
 			end
 		end
 
-		Log.info(string.format("SaveInstance 420 Edition %s on %s", version, Env.executor))
+		Log.info(string.format("Austin's Save Instance %s on %s", version, Env.executor))
 		Log.info(string.format("schema: %s (snapshot %s) | base64: %s | hidden properties: %s",
 			Schema.usingReflection and "ReflectionService + snapshot" or "snapshot only",
 			Schema.snapshotVersion, Env.base64source or "none",
@@ -3730,7 +3730,7 @@ end
 -- Final Source text for a script.
 function Scripts.source(script, ignored)
 	if ignored then
-		return "-- SaveInstance 420 Edition: skipped by DecompileIgnore\n"
+		return "-- Skipped by IgnoreList\n"
 	end
 	local result = resolve(script)
 	local source = "-- SaveInstance 420 Edition: " .. result.note .. "\n"
