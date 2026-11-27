@@ -876,17 +876,8 @@ local function buildOptions(toggles)
         SaveBytecode  = toggles.Bytecode.IsOn(),
         ShowStatus    = true,
 		noscripts	  = false,
-        IgnoreList    = {},
         ExtraInstances= {},
     }
-    if not toggles.Map.IsOn() then
-        table.insert(opts.IgnoreList, workspace)
-    end
-    if not toggles.UI.IsOn() then
-        table.insert(opts.IgnoreList, "PlayerGui")
-        table.insert(opts.IgnoreList, "StarterGui")
-        table.insert(opts.IgnoreList, "CoreGui")
-    end
 
     if experimentalCacheFolder then
         table.insert(opts.ExtraInstances, experimentalCacheFolder)
